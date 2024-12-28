@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+<a href="javascript:void(document.bgColor='#339999')">Fond bleu</a>
+<a href="javascript:void(document.bgColor='#66FF99')">Fond vert</a>
+
+<p id="paragraphe">texte texte</p>
+<script type="text/javascript">//ou bien<script language="javascrip">
+  document.getElementById("paragraphe").innerHTML="Texte change";s   
+</script>
+
+<form>
+<input type="text" name="champ_text" value="valuer d'origine">
+<input type="button" name="button" value="change"
+onclick="champ_text.value='valuer aprés clic'">
+</form>
+<form>
+  <input type="text" name="champ_text" value="valuer d'origine">
+  <input type="button" name="button" value="change"
+  onclick="champ_text.value='valuer aprés clic '"> 
+</form>
+<form>
+<input type="text" name="champ_text" value="valuer d'origine">
+<input type="button" name="button" value="change"
+onclick="champ_text.value='valuer aprés clic '">
+</form>
+<span id="citation">
+  Mieux vaut tard que jamais.
+</span>
+<script language="javascript">
+document.getElementById("citation").style.color="#888888";
+document.getElementById("citation").style.fontStyle="italic";
+
+</script>
+</body>ss
+</html>

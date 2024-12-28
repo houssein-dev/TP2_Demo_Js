@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Générer la Facture</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="container">GÉNÉRER LA FACTURE</h1>
+  <div class="container">
+    <form id="invoiceForm">
+      <input type="text" id="designation" placeholder="Désignation" required>
+      <input type="number" id="quantity" placeholder="Quantité" min="1" required>
+      <input type="number" id="unitPrice" placeholder="Prix unitaire" min="0" required>
+      <input type="text" id="clientName" placeholder="Nom du Client" required>
+      <input type="text" id="clientName" placeholder="Nom du Client" required value="Remise de 15%" readonly>
+
+      <button type="button" id="calculateBtn">Calculer les PT</button>
+      <input type="text" id="totalPrice" placeholder="PT" readonly>
+      <input type="text" id="totalPriceAfterDiscount" placeholder="PT - Remise" readonly>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
